@@ -1,0 +1,22 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        span {
+            display: block;
+            background-color: $white;
+            height: 1px;
+            width: 10.6px;
+        }
+    }
+}
