@@ -1,1 +1,23 @@
+@font-face {
+	font-family: "bold";
+	src: url("/src/fonts/ChakraPetch-Bold.woff2") format("woff2"),
+        url("/src/fonts/ChakraPetch-Bold.woff") format("woff"),;
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: "italic";
+	src: url("/src/fonts/ChakraPetch-Italic.woff2") format("woff2"),
+        url("/src/fonts/ChakraPetch-Italic.woff") format("woff"),;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "light";
+	src: url("/src/fonts/ChakraPetch-Light.woff2") format("woff2"),
+        url("/src/fonts/ChakraPetch-Light.woff") format("woff"),;
+	font-weight: normal;
+	font-style: normal;
+}
