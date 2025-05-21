@@ -1,7 +1,7 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixins.scss' as *;
 
-.imperson {
+.immersen {
     padding-top: 62px;
     &__title-h1 {
         @include title;
@@ -44,7 +44,7 @@
                 display: block;
                 width: 48px;
                 height: 7px;
-                background-image: url('/src/img/imperson/line-gradient.svg');
+                background-image: url('/src/img/immersen/line-gradient.svg');
                 position: absolute;
                 top: 20px;
                 left: -10px;
