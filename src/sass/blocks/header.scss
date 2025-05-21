@@ -2,6 +2,7 @@
 @use '/src/sass/base/mixins.scss' as *;
 
 .header {
+    padding-top: 42px;
     &__wrapper {
         display: flex;
         justify-content: space-between;

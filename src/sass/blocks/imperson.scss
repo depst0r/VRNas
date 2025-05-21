@@ -2,10 +2,16 @@
 @use '/src/sass/base/mixins.scss' as *;
 
 .imperson {
+    padding-top: 62px;
     &__title-h1 {
         @include title;
         position: relative;
         font-size: 48px;
         line-height: 121%;
+    }
+    &__subtitle {
+        @include sub;
+        display: block;
+        padding-top: 12px;
     }
 }
