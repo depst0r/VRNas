@@ -1,0 +1,11 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixins.scss' as *;
+
+.imperson {
+    &__title-h1 {
+        @include title;
+        position: relative;
+        font-size: 48px;
+        line-height: 121%;
+    }
+}
