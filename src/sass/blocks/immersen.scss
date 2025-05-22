@@ -22,12 +22,22 @@
     }
     &__client {
         display: flex;
-        gap: 18px;
         margin-top: 32px;
     }
     &__client-img {
-        display: flex;
-        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0;
+        align-items: center;
+        .item {
+            transform: translateX(-15px);
+        }
+        .item:nth-child(1) {
+            transform: translateX(0);
+        }
+        .item:nth-child(3) {
+            transform: translateX(-30px);
+        }
     }
     &__client-text {
         display: flex;
@@ -53,5 +63,21 @@
         span[type='text'] {
             @include sub;
         }
+    }
+    &__info {
+        &-img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+        }
+    }
+}
+
+.wrapper__group {
+    position: relative;
+    img {
+        position: absolute;
+        top: -200px;
     }
 }
