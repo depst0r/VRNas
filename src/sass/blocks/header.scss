@@ -6,6 +6,21 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        &-menu {
+            display: none;
+        }
+        &-btn {
+            display: none;
+            button {
+                background-color: transparent;
+                @include sub;
+                @include border-gradient;        
+                color: $white !important;
+                width: 126px;
+                height: 52px;
+            }
+        }
     }
     &__img {
         position: absolute;
@@ -14,28 +29,47 @@
         opacity: 0.5;
     }
     .burger {
-        @include burder-gradient;
+        @include border-gradient;
         display: flex;
         justify-content: center;
         align-items:center;
-        width: 32px;
-        height: 32px;
+        width: 52px;
+        height: 52px;
         &__wrapper {
             display: flex;
             flex-direction: column;
             align-items: end;
-            gap: 1px;
+            gap: 4px;
         }
         span {            
             display: block;
             background-color: $white;
             height: 2px;
-            width: 12px;
+            width: 16px;
             &:nth-child(2) {
-                width: 10px;
+                width: 12px;
             }
             &:nth-child(3) {
                 width: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__wrapper-btn {
+            display: block;
+        }
+        &__wrapper-burger {
+            display: none;
+        }
+        &__wrapper-menu {
+            display: block;
+            display: flex;
+            gap: 30px;
+            a {
+                @include sub;
             }
         }
     }

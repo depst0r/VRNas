@@ -85,7 +85,9 @@
         }
     }
     &__why-choose {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 33.333%;
         gap: 50px;
         background-color: $black-80;
         padding: 36px;
