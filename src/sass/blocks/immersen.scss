@@ -70,6 +70,18 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             align-items: center;
+            img {
+                min-width: 196px;
+            }
+        }
+        .wrapper__img {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            transform: translateX(16px);
+            img {
+                min-width: 354px;
+            }
         }
     }
 }
