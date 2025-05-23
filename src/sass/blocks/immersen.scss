@@ -84,6 +84,21 @@
             }
         }
     }
+    &__why-choose {
+        display: grid;
+        gap: 50px;
+        background-color: $black-80;
+        padding: 36px;
+        h3 {
+            @include title-2;
+            margin-top: 42px;
+        }
+        span {
+            display: block;
+            @include sub-2;
+            margin-top: 12px;
+        }
+    }
 }
 
 .wrapper__group {

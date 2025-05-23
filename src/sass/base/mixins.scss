@@ -14,12 +14,27 @@
     color: $white;
 }
 
+@mixin title-2 {
+    font-family: 'Medium';
+    font-weight: 400;
+    font-size: 20px;
+    color: $white;
+}
+
 @mixin sub {
-    font-family: light;
+    font-family: 'light';
     font-weight: 300;
     font-size: 16px;
     line-height: 175%;
     color: $greyscale-grey-2;
+}
+
+@mixin sub-2 {
+    font-family: 'light';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: $greyscale-grey-1;
 }
 
 @mixin btn-color {
