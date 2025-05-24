@@ -3,6 +3,9 @@
 
 .immersen {
     padding-top: 62px;
+    &__wrapper {
+        display: flex;
+    }
     &__title-h1 {
         @include title;
         position: relative;
@@ -23,6 +26,13 @@
     &__client {
         display: flex;
         margin-top: 32px;
+    }
+    &__client {
+        display: flex;
+        flex-wrap: wrap;
+        &-wrapper {
+            display: flex;
+        }
     }
     &__client-img {
         display: grid;
@@ -64,30 +74,9 @@
             @include sub;
         }
     }
-    &__info {
-        &-img {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr;
-            align-items: center;
-            img {
-                min-width: 196px;
-            }
-        }
-        .wrapper__img {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            transform: translateX(16px);
-            img {
-                min-width: 354px;
-            }
-        }
-    }
     &__why-choose {
         display: flex;
         flex-wrap: wrap;
-        flex: 1 1 33.333%;
         gap: 50px;
         background-color: $black-80;
         padding: 36px;
@@ -100,13 +89,5 @@
             @include sub-2;
             margin-top: 12px;
         }
-    }
-}
-
-.wrapper__group {
-    position: relative;
-    img {
-        position: absolute;
-        top: -200px;
     }
 }
