@@ -107,3 +107,37 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .immersen {
+        &__wrapper {
+            display: flex;
+            align-self: flex-end;
+            padding-right: 16px;
+        }
+        .wrapper {
+            &__video {
+                img {
+                    margin: 0;
+                    position: inherit;
+                }
+            }
+        }
+        &__column {
+            flex: 0 1 50%;
+            &-clients {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 81px;
+            }
+            &-hero {
+                margin: 0;
+                align-self: end;
+                flex: 0 1 50%;
+                img {
+                    margin: 0;
+                }
+            }
+        }
+    } 
+}
