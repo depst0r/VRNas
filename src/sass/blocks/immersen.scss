@@ -4,7 +4,23 @@
 .immersen {
     padding-top: 62px;
     &__wrapper {
-        display: flex;
+        display: block;
+        margin-left: 16px;
+    }
+    .wrapper {
+        &__video {
+            @include relative;
+            img {
+                position: absolute;
+                margin-top: 50%;
+            }
+        }
+    }
+    &__column-hero {
+        overflow: hidden;
+        img {
+            margin-left: 40%;
+        }
     }
     &__title-h1 {
         @include title;
