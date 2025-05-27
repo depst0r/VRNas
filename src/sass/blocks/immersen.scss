@@ -3,6 +3,9 @@
 
 .immersen {
     padding-top: 62px;
+    &__columns {
+        flex: 1 1 50%;
+    }
     &__wrapper {
         display: block;
         margin-left: 16px;
@@ -96,6 +99,7 @@
         gap: 50px;
         background-color: $black-80;
         padding: 36px;
+        border: 2px solid $greyscale-grey-1;
         h3 {
             @include title-2;
             margin-top: 42px;
