@@ -119,11 +119,16 @@
             align-self: flex-end;
             padding-right: 16px;
         }
+        &__columns {
+            flex: 1 1 33%;
+        }
         .wrapper {
             &__video {
+                padding-left: 35px;
                 img {
                     margin: 0;
                     position: inherit;
+                    padding-bottom: 40px;
                 }
             }
         }
@@ -132,7 +137,7 @@
             &-clients {
                 display: flex;
                 flex-wrap: wrap;
-                row-gap: 81px;
+                row-gap: 40px;
             }
             &-hero {
                 margin: 0;
@@ -144,4 +149,32 @@
             }
         }
     } 
+}
+
+@media screen and (min-width: 1024px) {
+    .immersen {
+        &__title-h1 {
+            max-width: 540px;
+        }
+        &__subtitle {
+            max-width: 446px;
+        }
+        &__column-clients {
+            padding-top: 81px;
+        }
+        &__client {
+            margin: 0;
+        }
+        &__why-choose {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        &__column {
+            padding-top: 87px;
+            flex: none;
+        }
+    }
+    .wrapper__video {
+        padding-left: 75px;
+    }
 }
