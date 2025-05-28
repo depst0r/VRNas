@@ -3,14 +3,36 @@
 
 .immersen {
     padding-top: 62px;
+<<<<<<< HEAD
 
     &__column-hero {
         display: flex;
         align-self: flex-end;
     }
 
+=======
+    &__columns {
+        flex: 1 1 50%;
+    }
+>>>>>>> b0530172d0b295e53ae7740902e83688c68129d1
     &__wrapper {
-        display: flex;
+        display: block;
+        margin-left: 16px;
+    }
+    .wrapper {
+        &__video {
+            @include relative;
+            img {
+                position: absolute;
+                margin-top: 50%;
+            }
+        }
+    }
+    &__column-hero {
+        overflow: hidden;
+        img {
+            margin-left: 40%;
+        }
     }
 
     &__title-h1 {
@@ -101,7 +123,11 @@
         gap: 50px;
         background-color: $black-80;
         padding: 36px;
+<<<<<<< HEAD
 
+=======
+        border: 2px solid $greyscale-grey-1;
+>>>>>>> b0530172d0b295e53ae7740902e83688c68129d1
         h3 {
             @include title-2;
             margin-top: 42px;
@@ -113,4 +139,74 @@
             margin-top: 12px;
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+@media screen and (min-width: 768px) {
+    .immersen {
+        &__wrapper {
+            display: flex;
+            align-self: flex-end;
+            padding-right: 16px;
+        }
+        &__columns {
+            flex: 1 1 33%;
+        }
+        .wrapper {
+            &__video {
+                padding-left: 35px;
+                img {
+                    margin: 0;
+                    position: inherit;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+        &__column {
+            flex: 0 1 50%;
+            &-clients {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 40px;
+            }
+            &-hero {
+                margin: 0;
+                align-self: end;
+                flex: 0 1 50%;
+                img {
+                    margin: 0;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .immersen {
+        &__title-h1 {
+            max-width: 540px;
+        }
+        &__subtitle {
+            max-width: 446px;
+        }
+        &__column-clients {
+            padding-top: 81px;
+        }
+        &__client {
+            margin: 0;
+        }
+        &__why-choose {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        &__column {
+            padding-top: 87px;
+            flex: none;
+        }
+    }
+    .wrapper__video {
+        padding-left: 75px;
+    }
+>>>>>>> b0530172d0b295e53ae7740902e83688c68129d1
 }

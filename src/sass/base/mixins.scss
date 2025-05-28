@@ -54,3 +54,8 @@
     text-align: center;
     color: $white;
 }
+
+@mixin relative {
+    display: block;
+    position: relative;
+}

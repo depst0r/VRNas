@@ -22,9 +22,15 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5
+{
     font-size: inherit;
     font-weight: inherit;
+    text-overflow: ellipsis;
+}
+
+span {
+    text-overflow: ellipsis;
 }
 
 img {
@@ -34,6 +40,8 @@ img {
 
 body {
     background-color: $black;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .container {
