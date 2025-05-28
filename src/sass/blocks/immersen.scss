@@ -1,64 +1,83 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/base/mixins.scss' as *;
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
 
 .immersen {
     padding-top: 62px;
+
+    &__column-hero {
+        display: flex;
+        align-self: flex-end;
+    }
+
     &__wrapper {
         display: flex;
     }
+
     &__title-h1 {
         @include title;
         position: relative;
         font-size: 48px;
         line-height: 121%;
     }
+
     &__subtitle {
         @include sub;
         display: block;
         padding-top: 12px;
     }
+
     &__btn {
         @include btn-color;
         @include btn-text;
         margin-top: 32px;
         border: none;
     }
+
     &__client {
         display: flex;
         margin-top: 32px;
     }
+
     &__client {
         display: flex;
         flex-wrap: wrap;
+
         &-wrapper {
             display: flex;
         }
     }
+
     &__client-img {
         display: grid;
         grid-auto-flow: column;
         gap: 0;
         align-items: center;
+
         .item {
             transform: translateX(-15px);
         }
+
         .item:nth-child(1) {
             transform: translateX(0);
         }
+
         .item:nth-child(3) {
             transform: translateX(-30px);
         }
     }
+
     &__client-text {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
+
         span[type='number'] {
             @include title;
             font-size: 16px;
             line-height: 175%;
             position: relative;
+
             &::after {
                 content: '';
                 display: block;
@@ -70,20 +89,24 @@
                 left: -10px;
             }
         }
+
         span[type='text'] {
             @include sub;
         }
     }
+
     &__why-choose {
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
         background-color: $black-80;
         padding: 36px;
+
         h3 {
             @include title-2;
             margin-top: 42px;
         }
+
         span {
             display: block;
             @include sub-2;
