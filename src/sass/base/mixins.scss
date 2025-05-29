@@ -14,8 +14,28 @@
     color: $white;
 }
 
-@mixin title-2 {
-    font-family: 'Medium';
+@mixin title-h2 {
+    font-family: 'bold';
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+    color: $white;
+}
+
+@mixin title-h4 {
+    font-family: 'medium';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: $linear;
+    background-clip: text;
+    color: transparent;
+    width: 100px;
+}
+
+@mixin title-card {
+    font-family: 'medium';
     font-weight: 400;
     font-size: 20px;
     color: $white;

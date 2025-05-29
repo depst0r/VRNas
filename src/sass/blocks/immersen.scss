@@ -101,7 +101,7 @@
         padding: 36px;
         border: 2px solid $greyscale-grey-1;
         h3 {
-            @include title-2;
+            @include title-card;
             margin-top: 42px;
         }
         span {
