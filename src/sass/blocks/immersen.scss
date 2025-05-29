@@ -39,6 +39,8 @@
     &__btn {
         @include btn-color;
         @include btn-text;
+        width: 206px;
+        height: 50px;
         margin-top: 32px;
         border: none;
     }
