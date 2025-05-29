@@ -153,6 +153,10 @@
 
 @media screen and (min-width: 1024px) {
     .immersen {
+        &__column-hero {
+            display: flex;
+            justify-content: flex-end;
+        }
         &__title-h1 {
             max-width: 540px;
         }
@@ -171,7 +175,6 @@
         }
         &__column {
             padding-top: 87px;
-            flex: none;
         }
     }
     .wrapper__video {
