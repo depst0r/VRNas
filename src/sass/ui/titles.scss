@@ -1,0 +1,14 @@
+
+@use '/src/sass/base/mixins.scss' as *;
+
+.title-h1-semi-bold {
+    @include title;
+}
+
+.title-h2-bold {
+    @include title-h2;
+}
+
+.title-h4-medium {
+    @include title-h4;
+}
