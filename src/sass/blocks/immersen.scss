@@ -28,7 +28,7 @@
     &__title-h1 {
         @include title;
         position: relative;
-        font-size: 48px;
+        font-size: clamp(48px, 5vw, 64px);
         line-height: 121%;
     }
     &__subtitle {
@@ -119,7 +119,7 @@
         &__wrapper {
             display: flex;
             align-self: flex-end;
-            padding-right: 16px;
+            margin: 0 45px;
         }
         &__columns {
             flex: 1 1 33%;
@@ -145,6 +145,7 @@
                 margin: 0;
                 align-self: end;
                 flex: 0 1 50%;
+                object-fit: cover;
                 img {
                     margin: 0;
                 }
@@ -155,6 +156,9 @@
 
 @media screen and (min-width: 1024px) {
     .immersen {
+        &__wrapper {
+            margin: 0 119px;
+        }
         &__column-hero {
             display: flex;
             justify-content: flex-end;
@@ -181,5 +185,13 @@
     }
     .wrapper__video {
         padding-left: 75px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .immersen {
+        &__wrapper {
+            margin: 0 119px;
+        }
     }
 }
