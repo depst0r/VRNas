@@ -7,8 +7,14 @@
 
 .title-h2-bold {
     @include title-h2;
+    font-family: 'bold';
+    font-size: clamp(32px, 9vh, 48px);
 }
 
 .title-h4-medium {
     @include title-h4;
+}
+
+.subtitle-light {
+    @include sub;
 }

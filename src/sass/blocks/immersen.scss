@@ -12,7 +12,8 @@
     }
     .wrapper {
         &__video {
-            @include relative;
+            display: block;
+            position: relative;
             img {
                 position: absolute;
                 margin-top: 50%;
