@@ -119,7 +119,7 @@
         &__wrapper {
             display: flex;
             align-self: flex-end;
-            margin: 0 45px;
+            margin: auto;
         }
         &__columns {
             flex: 1 1 33%;
@@ -157,7 +157,8 @@
 @media screen and (min-width: 1024px) {
     .immersen {
         &__wrapper {
-            margin: 0 119px;
+            max-width: 1081px;
+            margin: auto;
         }
         &__column-hero {
             display: flex;
@@ -190,8 +191,9 @@
 
 @media screen and (min-width: 1920px) {
     .immersen {
+        margin: auto;
         &__wrapper {
-            margin: 0 119px;
+            max-width: 1440px;
         }
     }
 }

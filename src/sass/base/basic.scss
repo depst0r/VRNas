@@ -40,7 +40,6 @@ img {
 
 body {
     background-color: $black;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -56,20 +55,22 @@ button {
     cursor: pointer;
 }
 
+
 @media screen and (min-width: 768px) {
-    .container {
-        margin: 0 45px;
+    .container{
+        max-width: 723px;
+        margin: 0 auto;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
     .container {
-        margin: 0 119px;
+        max-width: 1081px;
     }
 }
 
-// @media screen and (min-width: 1920px) {
-//     .container {
-//         margin: 0 119px;
-//     }
-// }
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1440px;
+    }
+}

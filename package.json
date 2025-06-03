@@ -15,6 +15,7 @@
     "picocolors": "^1.1.1",
     "picomatch": "^4.0.2",
     "postcss": "^8.5.3",
+    "purecss": "^3.0.0",
     "rollup": "^4.41.0",
     "source-map-js": "^1.2.1",
     "tinyglobby": "^0.2.13"
