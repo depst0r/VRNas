@@ -3,6 +3,13 @@
 
 .service {
     padding-top: 105px;
+    &__wrapper {
+        &-cards {
+            display: grid;
+            row-gap: 32px;
+            margin-top: 24px;
+        }
+    }
     &__card {
         background-color: rgba(37, 37, 50, 0.6);
     }
@@ -14,18 +21,42 @@
     &__card {
         padding: 38px 32px 39px 25px;
         &__title {
-            @include title-card;
             margin-top: 58px;
         }
         &__sub {
-            @include sub-2;
             margin-top: 12px;
         }
     }
 }
 
-.wrapper__cards {
-    display: grid;
-    row-gap: 32px;
-    margin-top: 24px;
+@media screen and (min-width: 1024px) {
+    .service {
+        &__wrapper {
+            &-text {
+                display: grid;
+                grid-template-columns: 0.5fr 1fr;
+                grid-template-rows: 1fr;
+                column-gap: 180px;
+            }
+            &-title {
+                display: grid;
+                row-gap: 12px;
+            }
+            &-cards {
+                margin-top: 46px;
+                display: grid;
+                grid-template-columns: repeat(3, 2fr);
+                grid-template-rows: repeat(2, 1fr);
+                column-gap: 36px;
+            }
+        }
+        &__card {
+            &:nth-child(2) {
+                margin-top: 57px;
+            }
+            &:nth-child(3) {
+                margin-top: 114px;
+            }
+        }
+    }
 }

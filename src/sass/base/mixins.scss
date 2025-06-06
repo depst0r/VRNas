@@ -10,6 +10,7 @@
 @mixin title {
     font-family: 'Semi-Bold';
     font-weight: 600;
+    font-size: clamp(48px, 5vw, 64px);
     letter-spacing: -0.01em;
     line-height: auto;
     color: $white;

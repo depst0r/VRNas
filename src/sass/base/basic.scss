@@ -63,6 +63,12 @@ button {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1081px;

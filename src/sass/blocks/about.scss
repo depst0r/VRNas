@@ -3,10 +3,6 @@
 
 .about {
     margin-top: 100px;
-    &__columns {
-        display: flex;
-        flex-wrap: wrap;
-    }
     &__wrapper {
         padding-top: 48px;
     }
@@ -15,16 +11,14 @@
         flex-direction: column;
         gap: 12px;
         &-hero {
-            padding-left: 19px;
+            // padding-left: 19px;
+            display: flex;
+            justify-content: center;
         }
         &-video {
             position: relative;
         } 
-        &-title-1 {
-            @include title-h2;
-        }
         &-title-2 {
-            @include title-h4;
             width: 100px;
         }
         &:nth-child(2) {
@@ -38,9 +32,6 @@
             height: 50px;
             border: none;
         }
-    }
-    &__sub {
-        @include sub;
     }
     &__checkbox-title {
         font-family: 'light';
@@ -65,12 +56,12 @@
     left: 62%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .about {
         &__columns {
             display: flex;
             justify-content: center;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             gap: 30px;
         }
         &__column-img {
