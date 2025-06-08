@@ -46,11 +46,26 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 row-gap: 0;
-                column-gap: 36px;
+                column-gap: 30px;
             }
         }
         &__card {
+            height: 291px;
+        }
+        &__item {
             margin-top: 30px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            &:nth-child(3) {
+                margin-top: 60px;
+            }
+            &:nth-child(4) {
+                margin-top: -30px;
+            }
+            &:nth-child(5) {
+                margin-top: 0;
+            }
         }
     }
 }
