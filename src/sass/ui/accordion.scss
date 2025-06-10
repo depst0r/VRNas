@@ -1,0 +1,30 @@
+.accordion {
+    width: 300px;
+    border: 1px solid red;
+    border-radius: 4px;
+
+    &__item {
+        border-bottom: 1px solid red;
+    }
+
+    &__header {
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+        padding: 0 15px;
+    }
+
+    &__content.show {
+        max-height: 500px;
+        padding: 15px;
+    }
+}

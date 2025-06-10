@@ -1,3 +1,34 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/base/mixins.scss' as *;
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
 
+.why-choose {
+    &__wrapper {
+        &__columns {}
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__video {
+        position: absolute;
+        width: clamp(100px, 30vw, 196px);
+        bottom: -4%;
+        right: 24%;
+    }
+
+    &__column {
+        &-right {
+            margin-top: 100px;
+        }
+
+        &-left {
+            margin-top: 48px;
+        }
+    }
+
+    &__person {
+        display: flex;
+        justify-content: center;
+    }
+}
