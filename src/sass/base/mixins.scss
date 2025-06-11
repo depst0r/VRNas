@@ -1,5 +1,5 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/libs/chakra-petch.css' as *;
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/libs/chakra-petch.css'as *;
 
 @mixin border-gradient {
     border: 2px solid transparent;
