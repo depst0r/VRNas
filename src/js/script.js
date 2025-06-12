@@ -5,20 +5,19 @@ import 'purecss/build/grids-responsive-min.css';
 
 const headers = document.querySelectorAll('.accordion__header');
 
-headers.forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
+const accordion = item => {
+    item.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
 
-        const isOpen = content.classList.contains('show');
+            const isOpen = content.classList.contains('show');
 
-        document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('show'));
-        console.log('show')
+            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('show'));
 
-        if (!isOpen) {
-            content.classList.add('show')
-        } else {
-            content.classList.remove('show')
-        }
+            !isOpen ? content.classList.add('show') : content.classList.remove('show')
 
+        })
     })
-})
+}
+
+accordion(headers)

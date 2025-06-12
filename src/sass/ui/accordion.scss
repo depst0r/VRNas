@@ -4,6 +4,14 @@
     width: 100%;
     margin-top: 28px;
 
+    &__item {
+        margin-top: clamp(23px, 7vw, 48px);
+
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
     &__header {
         cursor: pointer;
         padding: 15px 15px 15px 0;
