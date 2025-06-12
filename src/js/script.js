@@ -2,7 +2,7 @@ import '/src/sass/style.scss';
 import 'purecss/build/grids-min.css';
 import 'purecss/build/grids-responsive-min.css';
 
-
+//!ACCORDION
 const headers = document.querySelectorAll('.accordion__header');
 
 const accordion = item => {
@@ -10,9 +10,9 @@ const accordion = item => {
         header.addEventListener('click', () => {
             const content = header.nextElementSibling;
 
-            const isOpen = content.classList.contains('show');
+            const isOpen = content.classList.contains('show')
 
-            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('show'));
+            document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('show'))
 
             !isOpen ? content.classList.add('show') : content.classList.remove('show')
 

@@ -1,84 +1,101 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/base/mixins.scss' as *;
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
 
 .immersen {
     padding-top: 62px;
+
     &__columns {
         flex: 1 1 50%;
     }
+
     &__wrapper {
         display: block;
         margin-left: 16px;
     }
+
     .wrapper {
         &__video {
             display: block;
             position: relative;
+
             img {
                 position: absolute;
                 margin-top: 50%;
             }
         }
     }
+
     &__column-hero {
         overflow: hidden;
+
         img {
             margin-left: 40%;
         }
     }
+
     &__title-h1 {
         position: relative;
         line-height: 121%;
     }
+
     &__subtitle {
         @include sub;
         display: block;
         padding-top: 12px;
     }
+
     &__btn {
-        @include btn-color;
-        @include btn-text;
         width: 206px;
         height: 50px;
         margin-top: 32px;
         border: none;
     }
+
     &__client {
         display: flex;
         margin-top: 32px;
     }
+
     &__client {
         display: flex;
         flex-wrap: wrap;
+
         &-wrapper {
             display: flex;
         }
     }
+
     &__client-img {
         display: grid;
         grid-auto-flow: column;
         gap: 0;
         align-items: center;
+
         .item {
             transform: translateX(-15px);
         }
+
         .item:nth-child(1) {
             transform: translateX(0);
         }
+
         .item:nth-child(3) {
             transform: translateX(-30px);
         }
     }
+
     &__client-text {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
+
         span[type='number'] {
             @include title;
             font-size: 16px;
             line-height: 175%;
             position: relative;
+
             &::after {
                 content: '';
                 display: block;
@@ -90,10 +107,12 @@
                 left: -10px;
             }
         }
+
         span[type='text'] {
             @include sub;
         }
     }
+
     &__why-choose {
         display: flex;
         flex-wrap: wrap;
@@ -101,10 +120,12 @@
         background-color: $black-80;
         padding: 36px;
         border: 1px solid $greyscale-grey-1;
+
         h3 {
             @include title-card;
             margin-top: 42px;
         }
+
         span {
             display: block;
             @include sub-2;
@@ -121,12 +142,15 @@
             margin: auto;
             max-width: 723px;
         }
+
         &__columns {
             flex: 1 1 33%;
         }
+
         .wrapper {
             &__video {
                 padding-left: 35px;
+
                 img {
                     margin: 0;
                     position: inherit;
@@ -134,24 +158,28 @@
                 }
             }
         }
+
         &__column {
             flex: 0 1 50%;
+
             &-clients {
                 display: flex;
                 flex-wrap: wrap;
                 row-gap: 40px;
             }
+
             &-hero {
                 margin: 0;
                 align-self: end;
                 flex: 0 1 50%;
                 object-fit: cover;
+
                 img {
                     margin: 0;
                 }
             }
         }
-    } 
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -160,30 +188,38 @@
             max-width: 920px;
             margin: auto;
         }
+
         &__column-hero {
             display: flex;
             justify-content: flex-end;
         }
+
         &__title-h1 {
             max-width: 540px;
         }
+
         &__subtitle {
             max-width: 446px;
         }
+
         &__column-clients {
             padding-top: 81px;
         }
+
         &__client {
             margin: 0;
         }
+
         &__why-choose {
             display: flex;
             flex-wrap: nowrap;
         }
+
         &__column {
             padding-top: 87px;
         }
     }
+
     .wrapper__video {
         padding-left: 75px;
     }
@@ -192,7 +228,8 @@
 @media screen and (min-width: 1200px) {
     .immersen {
         &__wrapper {
-            max-width: 1081px;;
+            max-width: 1081px;
+            ;
         }
     }
 }
@@ -200,6 +237,7 @@
 @media screen and (min-width: 1920px) {
     .immersen {
         margin: auto;
+
         &__wrapper {
             max-width: 1440px;
         }

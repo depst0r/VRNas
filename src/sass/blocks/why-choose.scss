@@ -2,12 +2,12 @@
 @use '/src/sass/base/mixins.scss'as *;
 
 .why-choose {
-    max-width: 1440px;
-    margin: 0 auto;
+    // max-width: 1440px;
+    // margin: 0 auto;
 
-    &__wrapper {
-        margin: 0 16px;
-    }
+    // &__wrapper {
+    //     margin: 0 16px;
+    // }
 
     &__img {
         position: relative;
@@ -36,18 +36,16 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .why-choose__wrapper {
-        margin: 0 22.5px;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .why-choose__wrapper {
+//         margin: 0 22.5px;
+//     }
+// }
 
 @media screen and (min-width: 1024px) {
     .why-choose {
-
-        // margin: 0 18px 0 50px;
         &__wrapper {
-            margin-left: 52px;
+            // margin-left: 52px;
         }
 
         &__column {
@@ -73,9 +71,15 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .why-choose__wrapper {
-        max-width: 1081px;
-        margin: 0;
-    }
-}
+// @media screen and (min-width: 1440px) {
+//     .why-choose__wrapper {
+//         max-width: 1081px;
+//         margin: 0;
+//     }
+// }
+
+// @media screen and (min-width: 1920px) {
+//     .why-choose__wrapper {
+//         max-width: 1440px;
+//     }
+// }
