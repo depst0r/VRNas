@@ -1,5 +1,6 @@
 .clients {
     &__wrapper {
+
         &-text {
             display: flex;
             flex-direction: column;
@@ -8,7 +9,6 @@
             text-align: center;
 
             span:nth-child(1) {
-                width: 10%;
                 margin-top: 100px;
             }
 
@@ -17,12 +17,4 @@
             }
         }
     }
-
-    .ab {
-        position: absolute;
-    }
-}
-
-.circle-container {
-    position: relative;
 }

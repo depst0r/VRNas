@@ -50,6 +50,12 @@ body {
     margin: 0 16px;
 }
 
+.titles-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
 a {
     text-decoration: none;
 }
