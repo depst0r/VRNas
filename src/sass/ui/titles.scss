@@ -24,3 +24,9 @@
 .title-cards {
     @include title-card;
 }
+
+.subtitle-card {
+    @include sub-2;
+    font-size: 16px;
+    line-height: 175%;
+}
