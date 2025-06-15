@@ -74,3 +74,11 @@
     text-align: center;
     color: $white;
 }
+
+@mixin sub-3 {
+    font-family: 'light';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: $greyscale-grey-2;
+}
