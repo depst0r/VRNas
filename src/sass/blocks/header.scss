@@ -1,54 +1,63 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/base/mixins.scss' as *;
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
 
 .header {
     padding-top: 42px;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         &-menu {
             display: none;
         }
+
         &-btn {
             display: none;
+
             button {
                 background-color: transparent;
-                @include sub;
-                @include border-gradient;        
+                @include border-gradient;
                 color: $white !important;
                 width: 126px;
                 height: 52px;
             }
         }
     }
+
     &__img {
         position: absolute;
         top: 0;
         right: 0;
         opacity: 0.5;
     }
+
     .burger {
         @include border-gradient;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         width: 52px;
         height: 52px;
+
         &__wrapper {
             display: flex;
             flex-direction: column;
             align-items: end;
             gap: 6px;
         }
-        &__line{            
+
+        &__line {
             display: block;
             background-color: $white;
             height: 3px;
             width: 20px;
+
             &:nth-child(2) {
                 width: 15px;
             }
+
             &:nth-child(3) {
                 width: 10px;
             }
@@ -61,15 +70,21 @@
         &__wrapper-btn {
             display: block;
         }
+
         &__wrapper-burger {
             display: none;
         }
+
         &__wrapper-menu {
             display: block;
             display: flex;
             gap: 30px;
-            a {
-                @include sub;
+
+            .subtitle-light:hover {
+                background-image: $linear;
+                background-clip: text;
+                color: transparent;
+                transition: all 0.3s;
             }
         }
     }
@@ -78,6 +93,7 @@
 @media screen and (min-width: 1200px) {
     .header__wrapper-menu {
         gap: 60px;
+
         a {
             font-size: 19px;
         }
