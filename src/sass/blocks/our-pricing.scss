@@ -132,3 +132,15 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .our-pricing {
+        &__column-items {
+            width: 95%;
+        }
+
+        .pay {
+            left: 65%;
+        }
+    }
+}
