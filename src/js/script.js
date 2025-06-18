@@ -2,6 +2,14 @@ import '/src/sass/style.scss';
 import 'purecss/build/grids-min.css';
 import 'purecss/build/grids-responsive-min.css';
 
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 //!ACCORDION
 const headers = document.querySelectorAll('.accordion__header');
 
@@ -19,5 +27,22 @@ const accordion = item => {
         })
     })
 }
+
+//SLIDER
+
+new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.icon-right-open',
+        prevEl: '.icon-left-open'
+    },
+    loop: true,
+})
 
 accordion(headers)
