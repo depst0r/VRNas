@@ -1,0 +1,10 @@
+.slider {
+    position: relative;
+    max-width: 636px;
+
+    &__controls {
+        position: absolute;
+        left: 80%;
+        bottom: 20%;
+    }
+}
