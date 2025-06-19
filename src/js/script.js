@@ -36,11 +36,12 @@ new Swiper('.swiper', {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: false,
     },
 
     navigation: {
-        nextEl: '.icon-right-open',
-        prevEl: '.icon-left-open'
+        prevEl: '.slider__controls-right',
+        nextEl: '.slider__controls-left',
     },
     loop: true,
 })
