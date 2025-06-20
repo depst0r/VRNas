@@ -20,6 +20,10 @@
     @include sub;
 }
 
+.sub-scrollbar {
+    @include text-info-scrollbar;
+}
+
 .subtitle-accordion {
     @include sub;
     font-weight: 400;

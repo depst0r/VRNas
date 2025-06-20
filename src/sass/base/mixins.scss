@@ -75,6 +75,13 @@
     color: $greyscale-grey-2;
 }
 
+@mixin text-info-scrollbar {
+    font-family: 'light';
+    font-weight: 600;
+    font-size: 16px;
+    color: $white;
+}
+
 @mixin btn-color {
     background: $linear;
     padding: 0 10px;
