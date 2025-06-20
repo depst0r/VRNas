@@ -1,5 +1,5 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/libs/chakra-petch.css' as *;
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/libs/chakra-petch.css'as *;
 
 @mixin border-gradient {
     border: 2px solid transparent;
@@ -10,12 +10,42 @@
 @mixin title {
     font-family: 'Semi-Bold';
     font-weight: 600;
+    font-size: clamp(48px, 5vw, 64px);
+    letter-spacing: -0.01em;
+    line-height: auto;
+    color: $white;
+}
+
+@mixin title-h2 {
+    font-family: 'bold';
+    font-weight: 600;
+    font-size: clamp(32px, 4vw, 48px);
     letter-spacing: -0.01em;
     color: $white;
 }
 
-@mixin title-2 {
-    font-family: 'Medium';
+@mixin title-h4 {
+    display: inline-block;
+    font-family: 'medium';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background-image: $linear;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin title-h-5 {
+    font-family: 'bold';
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    color: $white;
+}
+
+@mixin title-card {
+    font-family: 'medium';
     font-weight: 400;
     font-size: 20px;
     color: $white;
@@ -37,11 +67,17 @@
     color: $greyscale-grey-1;
 }
 
+@mixin sub-3 {
+    font-family: 'light';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: $greyscale-grey-2;
+}
+
 @mixin btn-color {
     background: $linear;
     padding: 0 10px;
-    width: 206px;
-    height: 50px;
 }
 
 @mixin btn-text {
@@ -53,9 +89,4 @@
     text-transform: uppercase;
     text-align: center;
     color: $white;
-}
-
-@mixin relative {
-    display: block;
-    position: relative;
 }

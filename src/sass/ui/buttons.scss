@@ -1,0 +1,16 @@
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
+
+.btn-lianer {
+    @include btn-color;
+    @include btn-text;
+    width: 182px;
+    height: 50px;
+}
+
+.btn-border {
+    background-color: transparent;
+    @include btn-text;
+    @include border-gradient;
+    color: $white !important;
+}

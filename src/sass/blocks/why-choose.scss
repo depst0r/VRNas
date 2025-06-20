@@ -1,0 +1,85 @@
+@use '/src/sass/base/variables.scss'as *;
+@use '/src/sass/base/mixins.scss'as *;
+
+.why-choose {
+    // max-width: 1440px;
+    // margin: 0 auto;
+
+    // &__wrapper {
+    //     margin: 0 16px;
+    // }
+
+    &__img {
+        position: relative;
+    }
+
+    &__video {
+        position: absolute;
+        width: clamp(100px, 30vw, 196px);
+        bottom: -4%;
+        right: 24%;
+    }
+
+    &__column {
+        &-right {
+            margin-top: 100px;
+        }
+
+        &-left {
+            margin-top: 48px;
+        }
+    }
+
+    &__person {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// @media screen and (min-width: 768px) {
+//     .why-choose__wrapper {
+//         margin: 0 22.5px;
+//     }
+// }
+
+@media screen and (min-width: 1024px) {
+    .why-choose {
+        &__wrapper {
+            // margin-left: 52px;
+        }
+
+        &__column {
+            &-left {
+                order: 1;
+            }
+
+            &-right {
+                order: 2;
+                margin-top: 0;
+            }
+        }
+
+        &__columns {
+            // flex-direction: row-reverse !important;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__person {
+            justify-content: end;
+        }
+    }
+}
+
+// @media screen and (min-width: 1440px) {
+//     .why-choose__wrapper {
+//         max-width: 1081px;
+//         margin: 0;
+//     }
+// }
+
+// @media screen and (min-width: 1920px) {
+//     .why-choose__wrapper {
+//         max-width: 1440px;
+//     }
+// }

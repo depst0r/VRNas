@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,47 @@
     <script async type="module" src="/src/js/script.js"></script>
     <link rel="stylesheet" href="/src/sass/libs/modern-normalize.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #333;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            font-size: 18px;
+            height: auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+    </style>
 </head>
+
 <body>
     <section class="header">
         <img src="/src/img/header/Vector-bg.svg" alt="vector" class="header__img">
@@ -19,21 +60,21 @@
                     <img src="/src/logo/logo.png" alt="logo" class="header__logo">
                 </div>
                 <div class="header__wrapper-menu">
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Service</a>
-                    <a href="#">Page</a>
-                    <a href="#">Blog</a>
+                    <a class="subtitle-light" href="#">Home</a>
+                    <a class="subtitle-light" href="#">About us</a>
+                    <a class="subtitle-light" href="#">Service</a>
+                    <a class="subtitle-light" href="#">Page</a>
+                    <a class="subtitle-light" href="#">Blog</a>
                 </div>
                 <div class="header__wrapper-btn">
-                    <button class="header__btn">Contact us</button>
+                    <button class="header__btn subtitle-light">Contact us</button>
                 </div>
                 <div class="header__wrapper-burger">
                     <div class="burger">
                         <div class="burger__wrapper">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
                         </div>
                     </div>
                 </div>
@@ -42,37 +83,28 @@
     </section>
     <section class="immersen">
         <div class="immersen__wrapper">
-            <div class="immerson__column">
+            <div class="immersen__column">
                 <div class="immerson__column-content">
-                    <h1 class="immersen__title-h1">
+                    <h1 class="immersen__title-h1 title-h1-semi-bold">
                         Immerse Yourself in Virtual Reality
                     </h1>
-                    <span class="immersen__subtitle">
-                        Experience Unforgettable Events in VR. 
+                    <span class="immersen__subtitle subtitle-light ">
+                        Experience Unforgettable Events in VR.
                         Bring your events to life like never before with our VR services
                     </span>
-                    <button class="immersen__btn">discover more</button>
+                    <button class="immersen__btn btn-lianer">discover more</button>
                 </div>
-                <div class="immerson__column-clients">
+                <div class="immersen__column-clients">
                     <div class="immersen__client">
                         <div class="immersen__client-img">
                             <div class="item">
-                                <picture>
-                                    <source data-srcset="/src/img/immersen/happy-client/client1.png" srcset="/src/img/immersen/happy-client/client1.webp" type="image/webp" data-ll-status="item" class="item">
-                                    <img src="/src/img/immersen/happy-client/client1.png" alt="client">
-                                </picture>
+                                <img src="/src/img/immersen/happy-client/client1.png" alt="client">
                             </div>
                             <div class="item">
-                                <picture>
-                                    <source data-srcset="/src/img/immersen/happy-client/client2.png" srcset="/src/img/immersen/happy-client/client2.webp" type="image/webp" data-ll-status="item" class="item">
-                                    <img src="/src/img/immersen/happy-client/client2.png" alt="client">
-                                </picture>
+                                <img src="/src/img/immersen/happy-client/client2.png" alt="client">
                             </div>
                             <div class="item">
-                                <picture>
-                                    <source data-srcset="/src/img/immersen/happy-client/client3.png" srcset="/src/img/immersen/happy-client/client3.webp" type="image/webp" data-ll-status="item" class="item">
-                                    <img src="/src/img/immersen/happy-client/client3.png" alt="client">
-                                </picture>
+                                <img src="/src/img/immersen/happy-client/client3.png" alt="client">
                             </div>
                         </div>
                         <div class="immersen__client-text">
@@ -80,49 +112,598 @@
                             <span type="text">Happy Client</span>
                         </div>
                     </div>
-                    <div>
-                    </div>
-                        <div class="wrapper__video">
-                            <picture>
-                                <source data-srcset="/src/img/immersen/video-img/Video.webp" srcset="/src/img/immersen/video-img/Video.webp" type="image/webp" data-ll-status="vedeo" class="video">
-                                <img src="/src/img/immersen/video-img/Video.png" alt="video" class="video-screen">
-                            </picture>
-                        </div>
+                    <picture>
+                        <source data-srcset="/src/img/immersen/video-img/Video.webp"
+                            srcset="/src/img/immersen/video-img/Video.webp" type="image/webp" data-ll-status="entered"
+                            class="entered">
+                        <img src="/src/img/immersen/video-img/Video.png" alt="video">
+                    </picture>
                 </div>
             </div>
             <div class="immersen__column-hero">
                 <picture>
-                    <source data-srcset="/src/img/immersen/bg/bg.webp"  srcset="/src/img/immersen/bg/bg.webp"  type="image/webp" data-ll-status="hero" class="hero">
-                    <img src="/src/img/immersen/bg/bg.png"  alt="hero">
+                    <source data-srcset="/src/img/immersen/bg/bg.webp" srcset="/src/img/immersen/bg/bg.webp"
+                        type="image/webp" data-ll-status="entered" class="entered">
+                    <img src="/src/img/immersen/bg/bg.png" alt="hero">
                 </picture>
             </div>
         </div>
+        </div>
+        <div class="container">
             <div class="immersen__why-choose">
-                <div class="why-choose--expertise">
+                <div class="immersen__columns">
                     <img src="/src/img/immersen/why-choose/expertose.svg" alt="expertise">
                     <h3>Expertise</h3>
                     <span>
-                        Our team consists of experienced VR developers, 
-                        designers, and technicians who have a passion for VR and a commitment 
+                        Our team consists of experienced VR developers,
+                        designers, and technicians who have a passion for VR and a commitment
                         to delivering quality work and give the best service
                     </span>
                 </div>
-                <div class="why-choose--customization">
+                <div class="immersen__columns">
                     <img src="/src/img/immersen/why-choose/customization.svg" alt="customization">
                     <h3>Customization</h3>
                     <span>
-                        Every client is unique, and we believe every VR experience should be too. 
+                        Every client is unique, and we believe every VR experience should be too.
                         We'll work with you to create a customized solution that meets your specific needs and goals
                     </span>
                 </div>
-                <div class="why-choose--service">
+                <div class="immersen__columns">
                     <img src="/src/img/immersen/why-choose/service.svg" alt="service">
                     <h3>Service</h3>
-                    <span>We believe in providing exceptional customer service, from initial consultation to final delivery. 
+                    <span>We believe in providing exceptional customer service, from initial consultation to final
+                        delivery.
                         Our goal is to ensure you're satisfied with every aspect of your VR experience.</span>
                 </div>
             </div>
     </section>
-</body>
-</html>
+    <section class="about">
+        <div class="container">
+            <div class="about__columns">
+                <div class="about__column-img">
+                    <div class="about__column-hero">
+                        <picture>
+                            <source data-srcset="/src/img/about/webp/vr-2.webp" srcset="/src/img/about/webp/vr-2.webp"
+                                type="image/webp" data-ll-status="hero" class="hero">
+                            <img src="/src/img/about/png/hero.png" alt="video" class="hero">
+                        </picture>
+                    </div>
+                    <div class="about__column-video">
+                        <div class="video-wrap">
+                            <picture>
+                                <source data-srcset="/src/img/about/webp/screen.webp"
+                                    srcset="/src/img/about/webp/screen.webp" type="image/webp" data-ll-status="vedeo"
+                                    class="video">
+                                <img src="/src/img/about/png/screen.png" alt="video" class="video-screen">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__wrapper">
+                    <div class="about__column">
+                        <h4 class="about__column-title-2 title-h4-medium">ABOUT US</h4>
+                        <h2 class="title-h2-bold">Bring your events to life like never before with our VR services.</h2>
+                        <span class="subtitle-light">
+                            VRNas is a leading provider of VR services for education, entertainment, architecture, and
+                            events.
+                            Our mission is to bring the power of virtual reality to everyone,
+                            allowing them to explore new worlds, learn in new ways,
+                            and experience events in a whole new light.
+                        </span>
+                    </div>
+                    <div class="about__column">
+                        <div class="column__checkboxs">
+                            <label type="checkbox">
+                                <input type="checkbox">
+                                <span class="about__checkbox-title">
+                                    Cutting-Edge Technology
+                                </span>
+                            </label>
+                            <label type="checkbox">
+                                <input type="checkbox">
+                                <span class="about__checkbox-title">
+                                    Versatile Applications
+                                </span>
+                            </label>
+                            <label type="checkbox">
+                                <input type="checkbox">
+                                <span class="about__checkbox-title">
+                                    Affordable and Accessible
+                                </span>
+                            </label>
+                        </div>
+                        <div class="column__btn">
+                            <button class="btn btn-lianer">read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="service__wrapper">
+                <div class="service__wrapper-text">
+                    <div class="service__wrapper-title">
+                        <h4 class="service__title_lianer title-h4-medium">OUR SERVICE</h4>
+                        <h2 class="service__title-2 title-h2-bold">Our Service</h2>
+                    </div>
+                    <div class="subtitle-light service__sub-title">We use the latest VR hardware and software to create
+                        high-quality VR experiences that are accessible and affordable.
+                        Our goal is to provide exceptional customer service and support,
+                        and our team is always available to answer any questions and address any concerns you may have.
+                    </div>
+                </div>
+                <div class="service__wrapper-grid">
+                    <div class="service__wrapper-cards">
+                        <div class="service__item">
+                            <div class="service__card">
+                                <img src="/src/img/service/svg/monitor.svg" alt="logo-card">
+                                <div class="service__card__title title-cards">VR Development</div>
+                                <div class="service__card__sub subtitle-light">From concept to creation, our team of VR
+                                    developers will bring your vision to life.</div>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__card">
+                                <img src="/src/img/service/svg/limino.svg" alt="logo-card">
+                                <div class="service__card__title title-cards">VR Design</div>
+                                <div class="service__card__sub subtitle-light">Our talented VR designers will create
+                                    immersive
+                                    and engaging environments that will captivate your audience.</div>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__card">
+                                <img src="/src/img/service/svg/chat.svg" alt="logo-card">
+                                <div class="service__card__title title-cards">VR Consulting</div>
+                                <div class="service__card__sub subtitle-light">Our VR consultants will work with you to
+                                    ensure that your VR
+                                    experience meets your goals and exceeds your expectations.</div>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__card">
+                                <img src="/src/img/service/svg/gamepad.svg" alt="logo-card">
+                                <div class="service__card__title title-cards">VR Games</div>
+                                <div class="service__card__sub subtitle-light">We offer a wide selection of VR games
+                                    that are suitable
+                                    for players of all ages and skill levels.</div>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__card">
+                                <img src="/src/img/service/svg/nootepad.svg" alt="logo-card">
+                                <div class="service__card__title title-cards">VR Events</div>
+                                <div class="service__card__sub subtitle-light">Make your next event unforgettable with
+                                    our VR event services.</div>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__card">
+                                <img src="/src/img/service/svg/mask.svg" alt="logo-card">
+                                <div class="service__card__title title-cards">VR Entertainment</div>
+                                <div class="service__card__sub subtitle-light">reate a VR escape room, or offer VR
+                                    experiences at a theme park,
+                                    we have the expertise and experience to make it happen.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose__wrapper">
+                <div class="why-choose__columns">
+                    <div class="why-choose__column-right">
+                        <div class="why-choose__img">
+                            <div class="why-choose__person">
+                                <picture>
+                                    <source data-srcset="/src/img/immersen/why-choose/block/webp/Image.webp"
+                                        srcset="/src/img/immersen/why-choose/block/webp/Image.webp" type="image/webp"
+                                        data-ll-status="hero" class="person">
+                                    <img src="/src/img/immersen/why-choose/block/Image.png" alt="person">
+                                </picture>
+                            </div>
+                            <div class="why-choose__video">
+                                <div class="why-choose__video-wrapper">
+                                    <picture>
+                                        <source data-srcset="/src/img/immersen/why-choose/block/webp/video.webp"
+                                            srcset="/src/img/immersen/why-choose/block/webp/video.webp"
+                                            type="image/webp" data-ll-status="video" class="screen-video">
+                                        <img src="/src/img/immersen/why-choose/block/video.png" alt="screen-video">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-choose__column-left">
+                        <div class="why-choose__text">
+                            <h4 class="title-h4-medium">WHY CHOOSE US</h4>
+                            <h2 class="title-h2-bold">Why Choose Us for Your VR Needs</h2>
+                        </div>
+                        <div class="accordion" id="accordion__why-choose">
+                            <div class="accordion__item">
+                                <div class="accordion__header title-cards">Passionate and Experienced Team</div>
+                                <div class="accordion__content show">
+                                    <span class="accordion__text subtitle-accordion">We are proud of our team of VR
+                                        experts who are
+                                        passionate about VR and
+                                        dedicated to delivering the highest quality work.
+                                        Our team consists of experienced VR developers, designers, and technicians who
+                                        have a proven track record of creating
+                                        immersive and engaging VR experiences.</span>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header title-cards">Customized Solutions</div>
+                                <div class="accordion__content">
+                                    <span class="accordion__text subtitle-accordion">We are proud of our team of VR
+                                        experts who are
+                                        passionate about VR and
+                                        dedicated to delivering the highest quality work.
+                                        Our team consists of experienced VR developers, designers, and technicians who
+                                        have a proven track record of creating
+                                        immersive and engaging VR experiences.</span>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="accordion__header title-cards">Exceptional Customer Service</div>
+                                <div class="accordion__content">
+                                    <span class="accordion__text subtitle-accordion">We are proud of our team of VR
+                                        experts who are
+                                        passionate about VR and
+                                        dedicated to delivering the highest quality work.
+                                        Our team consists of experienced VR developers, designers, and technicians who
+                                        have a proven track record of creating
+                                        immersive and engaging VR experiences.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="presentation-video">
+        <div class="container">
+            <div class="presentation-video__wrapper">
+                <div class="presentation-video__text">
+                    <h4 class="title-h4-medium">HOW TO GET STARTED</h4>
+                    <h2 class="title-h2-bold">Bringing Your Virtual Reality Dreams to Life</h2>
+                </div>
+                <div class="presentation-video__video">
+                    <img src="/src/img/presentation-video/png/video.png" alt="video" class="video-screen">
+                </div>
+                <div class="presentation-video__button">
+                    <button class="btn-lianer">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="clients__wrapper">
+                <div class="clients__wrapper-text">
+                    <h4 class="title-h4-medium">TESTIMONIAL</h4>
+                    <h2 class="title-h2-bold">What Our Clients Are Saying</h2>
+                </div>
+                <div class="clients__circle">
+                    <div class="circle-container">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="160" fill="none" stroke="white" stroke-opacity="0.17" />
+                            <circle cx="200" cy="200" r="140" fill="none" stroke="white" stroke-opacity="0.17" />
+                            <circle cx="200" cy="200" r="120" fill="none" stroke="white" stroke-opacity="0.17" />
+                            <circle cx="200" cy="200" r="100" fill="none" stroke="white" stroke-opacity="0.17" />
+                            <circle cx="200" cy="200" r="80" fill="none" stroke="white" stroke-opacity="0.17" />
+                            <circle cx="200" cy="200" r="60" fill="none" stroke="white" stroke-opacity="0.17" />
+                            <image x="50" y="50" width="350" height="350" href="/src/img/clients/hero/hero2.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(-15,-15)" />
+                            <image x="50" y="50" width="25" height="25" href="/src/img/clients/ico/ico.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(250,253)" />
+                            <image x="50" y="50" width="25" height="25" href="/src/img/clients/ico/ico2.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(130,17)" />
+                            <image x="50" y="50" width="25" height="25" href="/src/img/clients/ico/ico3.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(80,217)" />
+                            <image x="50" y="50" width="25" height="25" href="/src/img/clients/ico/ico4.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(200,188)" />
+                            <image x="50" y="50" width="25" height="25" href="/src/img/clients/ico/ico5.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(250,57)" />
+                            <image x="50" y="50" width="25" height="25" href="/src/img/clients/ico/ico6.png"
+                                preserveAspectRatio="xMidYMid meet" transform="translate(0,57)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="our-pricing">
+        <div class="container">
+            <div class="titles-wrapper">
+                <h4 class="title-h4-medium our-pricing__title-lianer">our pricing</h4>
+                <h2 class="title-h2-bold our-pricing__title-bold">Affordable VR Services for Everyone</h2>
+                <div class="subtitle-light">reate a VR escape room, or offer VR
+                    experiences at a theme park,
+                    we have the expertise and experience to make it happen.</div>
+            </div>
+            <div class="our-pricing__columns-wrapper">
+                <div class="our-pricing__column">
+                    <div class="our-pricing__column-items">
+                        <div class="column__icon">
+                            <img src="/src/img/service/icons/cloud.svg" alt="cloud" class="column__icon-svg">
+                        </div>
+                        <div class="column__wrapper-info">
+                            <div class="column__title title-cards">Customizable Packages</div>
+                            <div class="column__information subtitle-card">We understand that each project is unique, so
+                                we
+                                offer
+                                customizable packages to ensure that you get the services you
+                                need at a price that works for you. Our team will work with you to create a package that
+                                meets your specific goals and
+                                budget.</div>
+                        </div>
+                    </div>
+                    <div class="our-pricing__column-items">
+                        <div class="column__icon">
+                            <img src="/src/img/service/icons/cloud.svg" alt="cloud" class="column__icon-svg">
+                        </div>
+                        <div class="column__wrapper-info">
+                            <div class="column__title title-cards">Flexible Payment Options</div>
+                            <div class="column__information subtitle-card">We offer flexible payment options to make it
+                                easy
+                                for you to
+                                get started with our services. We accept various payment
+                                methods, including credit cards, bank transfers, and PayPal, and we can also work with
+                                you
+                                to create a payment plan that
+                                suits your needs.</div>
+                        </div>
+                    </div>
+                    <div class="our-pricing__column-items">
+                        <div class="column__icon">
+                            <img src="/src/img/service/icons/cloud.svg" alt="cloud" class="column__icon-svg">
+                        </div>
+                        <div class="column__wrapper-info">
+                            <div class="column__title title-cards">Satisfaction Guarantee</div>
+                            <div class="column__information subtitle-card">We stand behind our services and are
+                                committed to
+                                ensuring that
+                                you are completely satisfied with the final product. If
+                                for any reason you are not happy with our services, we will work with you to make it
+                                right
+                                or provide a full refund.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-pricing__column-price">
+                    <div class="column__wrapper-price">
+                        <div class="wrapper-flex">
+                            <div class="column__price-line"></div>
+                        </div>
+                        <div class="column__price-img">
+                            <img src="/src/img/service/price/hero.png" alt="hero">
+                        </div>
+                    </div>
+                </div>
+                <div class="pay">
+                    <div class="pay__wrapper">
+                        <div class="pay__titl title-min">Start from</div>
+                        <div class="pay__price title-h1-semi-bold">$99</div>
+                        <div class="pay__btn">
+                            <button class="btn-lianer">get started</button>
+                        </div>
+                        <div class="pay__time subtitle-card">30 Days Moneyback Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="company">
+        <div class="container">
+            <div class="company__wrapper">
+                <div class="company__titles">
+                    <h4 class="title-h4-medium">Our Trusted Partners</h4>
+                    <h2 class="title-h2-bold">Discover the Companies We Work With</h2>
+                </div>
+            </div>
+            <div class="company__main">
+                <svg viewBox="0 0 375 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="187.172" cy="187.174" r="140" stroke="url(#paint0_linear_147_4486)"
+                        stroke-width="0.344828" />
+                    <defs>
+                        <linearGradient id="paint0_linear_147_4486" x1="0.275879" y1="187.174" x2="374.069" y2="187.174"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0CBAF1" />
+                            <stop offset="1" stop-color="#E95CE9" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="187.172" cy="187.174" r="160" stroke-width='0.85' stroke='rgba(255, 255, 255,0.17)' />
+                    <circle cx="187.172" cy="187.174" r="120" stroke-width='0.85' stroke='rgba(255, 255, 255,0.17)' />
+                    <circle cx="187.172" cy="187.174" r="100" stroke-width='0.85' stroke='rgba(255, 255, 255,0.17)' />
+                    <image x="50" y="50" width="350" height="300" href="/src/img/company/bg/any.png"
+                        preserveAspectRatio="xMidYMid meet" transform="translate(-25,-15)" />
+                    <!-- <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="51" cy="51" r="15" fill="#252532" fill-opacity="0.8" />
+                        <circle cx="51" cy="51" r="14.5" stroke="url(#paint0_linear_43_1752)" stroke-opacity="0.3" />
+                        <defs>
+                            <linearGradient id="paint0_linear_43_1752" x1="-1.07003e-06" y1="-3.68497" x2="110.285"
+                                y2="5.81496" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
 
+                    </svg> -->
+                    <!-- <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="51" cy="51" r="15" fill="#252532" fill-opacity="0.8" />
+                        <circle cx="51" cy="51" r="14.5" stroke="url(#paint0_linear_43_1752)" stroke-opacity="0.3" />
+                        <clipPath id="circleClip">
+                            <circle cx="51" cy="51" r="15" />
+                        </clipPath>
+
+                        <image x="40" y="36" width="22" height="30" href="/src/img/company/logo.svg/logo1.svg"
+                            clip-path="url(#circleClip)" preserveAspectRatio="cover" preserveAspectRatio="xMidYMid meet"
+                            transform="translate(250,253)" />
+
+                        <defs>
+                            <linearGradient id="paint0_linear_43_1752" x1="-1.07003e-06" y1="-3.68497" x2="110.285"
+                                y2="5.81496" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" />
+                                <stop offset="1" stop-color="white" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg> -->
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="articles">
+        <div class="container">
+            <div class="articles__titles">
+                <h4 class="title-h4-medium">OUR ARTICLES</h4>
+                <h2 class="title-h2-bold">Discover the Companies We Work With</h2>
+            </div>
+            <div class="article__wrapper">
+                <div class="swiper slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/src/img/slider/slides/2.png" alt="slide" class="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/src/img/slider/slides/2.png" alt="slide" class="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/src/img/slider/slides/2.png" alt="slide" class="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/src/img/slider/slides/2.png" alt="slide" class="slide">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="slider__controls">
+                        <div class="swiper-button-prev slider__controls-left">
+                        </div>
+                        <div class="swiper-button-next slider__controls-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="scrollbar scroll-container">
+                    <div class="scrollbar__title">
+                        <h5 class="title-h2-bold">Recent Article</h5>
+                    </div>
+                    <div class="scroll-box">
+                        <div class="scrollbar__wrapper">
+                            <div class="scrollbar__items">
+                                <div class="scrollbar__item">
+                                    <div class="scrollbar__item-img">
+                                        <img src="/src/img/scrollbar/1.png" alt="item">
+                                    </div>
+                                    <div class="scrollbar__text">
+                                        <div class="scrollbar__text-bg">
+                                            <span>VR Education</span>
+                                        </div>
+                                        <span>
+                                            The Future of Education: How VR is Revolutionizing the Classroom
+                                        </span>
+                                    </div>
+                                    <div class="scrollbar__nav">
+                                        <img src="/src/img/slider/navigation/right.png" alt="right">
+                                    </div>
+                                </div>
+                                <div class="scrollbar__line"></div>
+                                <div class="scrollbar__item">
+                                    <div class="scrollbar__item-img">
+                                        <img src="/src/img/scrollbar/2.png" alt="item">
+                                    </div>
+                                    <div class="scrollbar__text">
+                                        <div class="scrollbar__text-bg">
+                                            <span>VR Education</span>
+                                        </div>
+                                        <span>
+                                            The Future of Education: How VR is Revolutionizing the Classroom
+                                        </span>
+                                    </div>
+                                    <div class="scrollbar__nav">
+                                        <img src="/src/img/slider/navigation/right.png" alt="right">
+                                    </div>
+                                </div>
+                                <div class="scrollbar__line"></div>
+                                <div class="scrollbar__item">
+                                    <div class="scrollbar__item-img">
+                                        <img src="/src/img/scrollbar/3.png" alt="item">
+                                    </div>
+                                    <div class="scrollbar__text">
+                                        <div class="scrollbar__text-bg">
+                                            <span>VR Education</span>
+                                        </div>
+                                        <span>
+                                            The Future of Education: How VR is Revolutionizing the Classroom
+                                        </span>
+                                    </div>
+                                    <div class="scrollbar__nav">
+                                        <img src="/src/img/slider/navigation/right.png" alt="right">
+                                    </div>
+                                </div>
+                                <div class="scrollbar__item">
+                                    <div class="scrollbar__line"></div>
+                                    <div class="scrollbar__item-img">
+                                        <img src="/src/img/scrollbar/1.png" alt="item">
+                                    </div>
+                                    <div class="scrollbar__text">
+                                        <div class="scrollbar__text-bg">
+                                            <span>VR Education</span>
+                                        </div>
+                                        <span>
+                                            The Future of Education: How VR is Revolutionizing the Classroom
+                                        </span>
+                                    </div>
+                                    <div class="scrollbar__nav">
+                                        <img src="/src/img/slider/navigation/right.png" alt="right">
+                                    </div>
+                                </div>
+                                <div class="scrollbar__line"></div>
+                                <div class="scrollbar__item">
+                                    <div class="scrollbar__item-img">
+                                        <img src="/src/img/scrollbar/2.png" alt="item">
+                                    </div>
+                                    <div class="scrollbar__text">
+                                        <div class="scrollbar__text-bg">
+                                            <span>VR Education</span>
+                                        </div>
+                                        <span>
+                                            The Future of Education: How VR is Revolutionizing the Classroom
+                                        </span>
+                                    </div>
+                                    <div class="scrollbar__nav">
+                                        <img src="/src/img/slider/navigation/right.png" alt="right">
+                                    </div>
+                                </div>
+                                <div class="scrollbar__line"></div>
+                                <div class="scrollbar__item">
+                                    <div class="scrollbar__item-img">
+                                        <img src="/src/img/scrollbar/3.png" alt="item">
+                                    </div>
+                                    <div class="scrollbar__text">
+                                        <div class="scrollbar__text-bg">
+                                            <span>VR Education</span>
+                                        </div>
+                                        <span>
+                                            The Future of Education: How VR is Revolutionizing the Classroom
+                                        </span>
+                                    </div>
+                                    <div class="scrollbar__nav">
+                                        <img src="/src/img/slider/navigation/right.png" alt="right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

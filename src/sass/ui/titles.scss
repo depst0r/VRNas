@@ -1,0 +1,40 @@
+@use '/src/sass/base/mixins.scss'as *;
+
+.title-h1-semi-bold {
+    @include title;
+}
+
+.title-h2-bold {
+    @include title-h2;
+}
+
+.title-h4-medium {
+    @include title-h4;
+}
+
+.title-h5 {
+    @include title-h-5;
+}
+
+.subtitle-light {
+    @include sub;
+}
+
+.subtitle-accordion {
+    @include sub;
+    font-weight: 400;
+}
+
+.title-cards {
+    @include title-card;
+}
+
+.subtitle-card {
+    @include sub-2;
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.title-min {
+    @include sub-3;
+}

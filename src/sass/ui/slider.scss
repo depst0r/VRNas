@@ -1,0 +1,45 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.slider {
+    position: relative;
+    max-width: 636px;
+
+    &__controls {
+        position: absolute;
+        left: 80%;
+        bottom: 40%;
+        display: flex;
+
+        &-left {
+            background: url('/src/img/slider/navigation/left.png') no-repeat;
+            transform: rotate(-180deg);
+        }
+
+        &-right {
+            background: url('/src/img/slider/navigation/right.png') no-repeat;
+            transform: rotate(180deg);
+        }
+
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: transparent;
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 32px;
+        width: 9px;
+        height: 3px;
+        background: $greyscale-grey-3;
+    }
+
+    .swiper-pagination-bullet-active {
+        border-radius: 32px;
+        width: 17px;
+        height: 3px;
+        background-color: $white;
+        transition: all 0.5s;
+    }
+}
